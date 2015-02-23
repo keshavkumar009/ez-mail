@@ -562,4 +562,24 @@ class MailgunService extends AbstractMailService
 
         return $this->parseResponse($response);
     }
+	
+	/**
+     * Unsubscribe a recipient from all mail sent through this domain:
+     *
+     * @link   https://documentation.mailgun.com/api-unsubscribes.html
+     * @param  string $address
+     * @return array
+     */
+	 
+	public function postUnsubscribe($address,$tag='*')
+    {
+        $parameters = array('address' => $address, 'tag' => $tag);
+
+        $response = $this->prepareHttpClient('/unsubscribes')
+                         ->setMethod(HttpRequest::METHOD_POST)
+                         ->setParameterGet($this->filterParameters($parameters))
+                         ->send();
+
+        return $this->parseResponse($response);
+    }
 }
