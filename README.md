@@ -56,7 +56,7 @@ curl -s http://getcomposer.org/installer | php
 php composer.phar install
 ```
 
-Now you should have a `vendor` directory, including a `slm/mail`. In your bootstrap code, make sure
+Now you should have a `vendor` directory, including a `misarji/ez-mail`. In your bootstrap code, make sure
 you include the `vendor/autoload.php` file to properly load the EzMail module.
 
 ### Amazon SES
