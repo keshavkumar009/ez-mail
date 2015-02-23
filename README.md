@@ -35,7 +35,7 @@ Requirements
 Installation
 ------------
 
-Add `"slm/mail"` to your `composer.json` file and update your dependencies. Enable `EzMail` in your
+Add `"misarji/ez-mail"` to your `composer.json` file and update your dependencies. Enable `EzMail` in your
 `application.config.php`. To use one of the transport layers, see the documentation in the [docs](https://github.com/misarji/EzMail/tree/master/docs) folder.
 
 If you do not have a `composer.json` file in the root of your project, copy the contents below and put that into a
